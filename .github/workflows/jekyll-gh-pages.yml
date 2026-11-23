@@ -48,8 +48,9 @@ jobs:
           npm run build
       - name: Copy portfolio into _site/site/
         run: |
-          mkdir -p ./_site/site
-          cp -r ./site/out/* ./_site/site/
+          # _site is created by the Jekyll container as root, so copy with sudo
+          sudo mkdir -p ./_site/site
+          sudo cp -r ./site/out/. ./_site/site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
