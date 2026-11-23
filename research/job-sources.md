@@ -9,7 +9,14 @@ Summaries are in my own words; short quotes only.
 |---|---|---|---|---|---|---|
 | 1 | Forward Deployed Engineer (FDE) | Palantir Technologies | Forward Deployed Software Engineer, New Grad – Commercial | https://jobs.lever.co/palantir/e500bcf3-19d8-4d3c-b340-4d76e4a55b40 (Palantir's own applicant site) | 2026-11-18 | Yes, page live |
 | 2 | Another AI-related technology role | OpenAI | Applied AI Engineer, API Platform, Digital Natives | https://openai.com/careers/applied-ai-engineer-api-platform-digital-natives-new-york-city/ | 2026-11-18 | Yes, "Apply now" shown |
-| 3 | AI role in another industry (healthcare) | NYU Langone Health (NYU Grossman School of Medicine) | AI Engineer (Remote Patient Monitoring) | https://jobs.nyulangone.org/job/22611479/ai-engineer-new-york-ny/ | 2026-11-18 | Page live; no "closed" notice |
+| 3 | AI role in another industry (banking) | JPMorganChase | 2027 Data & AI Program – Summer Internship – Analyst – United States | Program page: https://www.jpmorganchase.com/careers/explore-opportunities/programs/data-ai-opportunities (application page: TO ADD) | 2026-11-23 | NOT CHECKED on the employer's application page yet. One job board lists a 11/6/26 deadline; Built In shows it reposted on 2026-11-23 |
+
+## Re-check on 2026-11-23
+- #1 Palantir: page still loads. **I am not eligible yet:** it requires graduating Dec 2026 or spring 2027; I graduate December 2027 (résumé). Kept as a **future target**, not an immediate application.
+- #2 OpenAI: page still loads. Senior (8+ years): future target.
+- NYU Langone AI Engineer (old #3): **closed**, page returns "Page not found". Replaced by JPMorganChase.
+- Bank of America checked as a replacement: AI Engineer – Data Scientist I page redirected to a sign-on page; Senior Data Engineer – AI Infrastructure (Job 26042220, posted 2026-11-13, Jersey City) is live but needs 15+ years; Global Technology Summer Analyst 2027 (Job 14418, grads Nov 2027–Aug 2028) returns 404 (deadline was Nov 7).
+- Finding: my real next step is a **summer 2027 internship**, because I graduate in December 2027.
 
 ## Notes per posting
 
@@ -30,26 +37,26 @@ Summaries are in my own words; short quotes only.
 - **Evidence they ask for:** 8+ years of hands-on technical experience and a track record of shipping production AI systems with measurable impact.
 - **What surprised me:** It is the same customer-embedded work as an FDE, but senior. It shows where the FDE path leads after years of experience, not where it starts.
 
-### 3. AI role in another industry — NYU Langone Health (healthcare)
-- **Where:** New York, NY (page gives no schedule or work arrangement).
-- **Pay:** $70,481.61–$91,266.
-- **What the job actually does:** Build and run generative AI and machine learning for the Remote Patient Monitoring program: pipelines to deploy and monitor language models, uses such as summarizing, triage and patient messaging, monitoring for drift and safety, cost and speed tuning, HIPAA-compliant handling of patient data, CI/CD, and documentation, working with clinicians and care teams.
-- **Required skills:** Bachelor's in CS, data science, biomedical informatics or related; strong Python; knowledge of AI/ML/deep learning; PyTorch or TensorFlow; experience with cluster-scale computing (HPC, Spark, Kubernetes); software fundamentals; communication.
-- **Preferred skills:** Master's; 3–5 years shipping production AI including LLM apps; Azure or AWS; RAG, semantic search, vector databases; MLOps tools (MLflow, Kubeflow, Airflow, Weights & Biases); healthcare data and EHR experience.
-- **Evidence they ask for:** 0–1 years of AI development required, so it is open to new graduates.
-- **What surprised me:** Entry-level by years, but the tool list is long. Rules (HIPAA, patient safety) shape the engineering as much as the models do.
+### 3. AI role in another industry — JPMorganChase (banking), summer internship
+- **Where:** New York Metro, Columbus, Chicago, Delaware, Plano, Palo Alto; hybrid. (From job-board copies; to confirm on JPMorganChase's own page.)
+- **Pay:** one job board lists $45.67–$55.29/hour. NOT CONFIRMED on the employer page.
+- **What the job actually does:** build end-to-end data, analytics and AI/ML solutions that turn business goals into measurable outcomes; design data platforms and pipelines, develop production-ready models and dashboards, and follow data governance, privacy and compliance rules, on agile teams.
+- **Eligibility:** bachelor's or master's in a quantitative or technical field; graduating December 2027 – August 2028 (fits me); no prior work experience required.
+- **Tools named on the program page:** Python, SQL, AWS, Copilot, Snowflake, Databricks.
+- **Related:** a "Data for Good" hackathon (posted 2026-11) is a possible pathway into the program.
+- **Old #3 (closed):** NYU Langone AI Engineer, Remote Patient Monitoring, captured 2026-11-18; healthcare backup direction.
 
 ## Skills across the three postings
 
-| Skill or trait | #1 Palantir FDE | #2 OpenAI Applied AI | #3 NYU Langone AI |
+| Skill or trait | #1 Palantir FDE | #2 OpenAI Applied AI | #3 JPMorganChase Data & AI intern |
 |---|---|---|---|
 | Python (or another language) | Required | Required | Required |
-| Working directly with customers / users | Core of the job | Core of the job | With clinicians |
+| Working directly with customers / users | Core of the job | Core of the job | With business teams |
 | Building LLM / AI workflows | Yes | Yes | Yes |
-| Evaluation and monitoring of AI | — | Yes | Yes |
+| Evaluation and monitoring of AI | — | Yes | Governance and compliance |
 | Owning a project end to end | Yes | Yes | Yes |
-| Cloud, containers, CI/CD | Not stated | Not stated | Yes |
-| Years of experience | New grad | 8+ | 0–1 |
+| Cloud, containers, CI/CD | Not stated | Not stated | AWS, Databricks, Snowflake |
+| Years of experience | New grad (I am not eligible until later) | 8+ | None required (internship) |
 
 ## Leads that were checked and not used
 | Lead | Result on 2026-11-18 |
