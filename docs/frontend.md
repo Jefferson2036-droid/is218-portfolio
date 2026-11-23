@@ -30,3 +30,18 @@ Design canvas (2026-11-23, made with Claude; private until shared): https://clau
 - About and experience page
 - Home B at phone width
 Colors: navy #0B1F3A text, blue #0A58E8 accent, pale blue #EEF4FF sections, rules #D5DEEC. Fonts: Inter (400–800), IBM Plex Mono for labels. Not yet reviewed by a classmate; option A vs B not yet chosen.
+
+## Design review notes (2026-11-23)
+**Decision:** keep the current mockups as the working design for now.
+
+**My own review:** the mockups still look somewhat AI-generated. Improvements to make before launch (not done yet):
+| Issue | Planned fix |
+|---|---|
+| No real person on the site | Add a real headshot and real images (Arena Climb screenshot, Bloomberg chart) |
+| Copy sounds generated (long headline, em dashes, jargon like "forward-deployed style") | Rewrite the headline and About intro in my own words; shorter and specific |
+| Inter is a default font | Consider Schibsted Grotesk, Archivo or Hanken Grotesk |
+| Every card and label the same size; status tags and small labels everywhere | Stronger Swiss grid contrast: one oversized element per screen, unequal columns, fewer tags |
+| No signature element | "JR" monogram in a blue square as the logo |
+
+## Animation
+Specified in `AGENTS.md` (page-load headline rise, scroll reveals, drawing divider lines, hover/focus lift, page cross-fades, case-study row reveals; reduced-motion fallback; no parallax, bouncing or counters).

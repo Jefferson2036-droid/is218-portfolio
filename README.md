@@ -2,7 +2,7 @@
 
 Repository: https://github.com/Jefferson2036-droid/is218-portfolio
 
-**Phase: Plan (research and decisions).** Findings here become the specification for the portfolio website and for LinkedIn/GitHub updates.
+**Phase: Plan done (2026-11-23); build next.** Findings here become the specification for the portfolio website and for LinkedIn/GitHub updates.
 
 **Direction:** forward-deployed / applied data and AI work, kept general, with two areas: data and AI in a business setting (example: banking) and customer-facing builds. **Reader:** an early-career reviewer for applied data/AI roles in any industry. **Layout:** Field Notes (case studies). The postings are research, not applications.
 
@@ -14,6 +14,8 @@ Repository: https://github.com/Jefferson2036-droid/is218-portfolio
 | Two brand/layout directions | [docs/brand-directions.md](docs/brand-directions.md) | Done: Field Notes chosen |
 | Three to five user stories | [docs/user-stories.md](docs/user-stories.md) | Done: 5 stories |
 | LinkedIn and GitHub changes | [docs/linkedin-github.md](docs/linkedin-github.md) | Planned; none made yet |
+| Front-end plan + mockups | [docs/frontend.md](docs/frontend.md) | Next.js, Swiss corporate look, two homepage options mocked up; de-AI fixes listed |
+| Instructions for coding agents | [AGENTS.md](AGENTS.md) | Includes animation rules |
 | Project record | [docs/project-record.md](docs/project-record.md) | Ongoing |
 
 **Private career reflection stays in Canvas, not in this repository.**
