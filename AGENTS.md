@@ -2,6 +2,9 @@
 
 This is Jefferson Rodas's personal portfolio site (IS218). Read the plan before writing code; Jefferson makes the decisions.
 
+## Current task
+Work on **`docs/tasks/review-2-draft.md`** — it lists exactly what to build now and what to leave for later.
+
 ## Read first
 1. `docs/reader.md` – who the site is for and the one-sentence promise
 2. `docs/user-stories.md` – stories with acceptance checks (definition of done)

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena Climb – case study</title>
+<!-- Static design mockup (2026-11-23). Visual reference for the build, not production code. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0A58E8}a:hover{color:#0B1F3A}
+</style>
+</head>
+<body>
+<div style="background: #FFFFFF; color: #0B1F3A; font-family: Inter, system-ui, sans-serif">
+  <header style="border-bottom: 1px solid #D5DEEC">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <a href="home-b.html" style="color: #0B1F3A; text-decoration: none; font-weight: 800; font-size: 20px; letter-spacing: -0.02em">JEFFERSON RODAS<span style="color: #0A58E8">.</span></a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px">
+        <a href="home-b.html" style="padding: 12px 14px; color: #0A58E8; text-decoration: none; font-weight: 600; font-size: 15px; border-bottom: 3px solid #0A58E8">Work</a>
+        <a href="about.html" style="padding: 12px 14px; color: #0B1F3A; text-decoration: none; font-weight: 600; font-size: 15px">About</a>
+        <a href="#contact" style="padding: 12px 14px; color: #0B1F3A; text-decoration: none; font-weight: 600; font-size: 15px">Contact</a>
+        <a href="#" style="margin-left: 8px; padding: 12px 18px; background: #0A58E8; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px">Résumé (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 24px">
+    <a href="home-b.html" style="font-weight: 600; font-size: 15px; text-decoration: none">← All work</a>
+    <p style="margin: 28px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #4A5A70">CASE STUDY · CUSTOMER-FACING BUILDS · IS218, FALL 2026</p>
+    <h1 style="margin: 12px 0 0; font-size: clamp(44px, 7vw, 88px); line-height: 1; font-weight: 800; letter-spacing: -0.04em">Arena Climb</h1>
+    <p style="margin: 16px 0 0; max-width: 760px; font-size: 21px; line-height: 1.5; color: #33435A">A Knight / Archer / Wizard game where you climb ranks against a computer that reads your habits.</p>
+    <dl style="margin: 36px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid #D5DEEC">
+      <div style="padding: 18px 20px; border-right: 1px solid #D5DEEC"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5A70">MY ROLE</dt><dd style="margin: 6px 0 0; font-weight: 600">Solo: research, decisions, build (AI-assisted)</dd></div>
+      <div style="padding: 18px 20px; border-right: 1px solid #D5DEEC"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5A70">STACK</dt><dd style="margin: 6px 0 0; font-weight: 600">Flask, Flask-Login, PostgreSQL, pytest, Playwright</dd></div>
+      <div style="padding: 18px 20px; border-right: 1px solid #D5DEEC"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5A70">STATUS</dt><dd style="margin: 6px 0 0; font-weight: 600">Plan done · rebuild in progress</dd></div>
+      <div style="padding: 18px 20px"><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5A70">LINKS</dt><dd style="margin: 6px 0 0; font-weight: 600; display: flex; flex-wrap: wrap; gap: 12px"><a href="https://github.com/Jefferson2036-droid/is218-individual-game">Code</a><a href="https://github.com/Jefferson2036-droid/is218-individual-game/blob/main/docs/project-record.md">Project record</a><a href="#">Live demo [ADD]</a></dd></div>
+    </dl>
+    <div style="margin: 32px 0 8px; background: #0A58E8; padding: 28px 32px 0; display: flex; justify-content: center; align-items: flex-end; gap: 40px">
+      <img src="img/knight-px.png" alt="Knight sprite" style="height: 160px; image-rendering: pixelated">
+      <img src="img/archer-px.png" alt="Archer sprite" style="height: 160px; image-rendering: pixelated">
+      <img src="img/wizard-px.png" alt="Wizard sprite" style="height: 160px; image-rendering: pixelated">
+    </div>
+    <p style="margin: 0 0 24px; font-size: 14px; color: #4A5A70">Fighters rendered in Blender from free CC0 models (Quaternius), then pixelated.</p>
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; padding: 40px 0; border-top: 1px solid #D5DEEC">
+        <div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0A58E8">01</div><h2 style="margin: 6px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.025em">Problem</h2></div>
+        <div style="grid-column: span 2; min-width: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.6; color: #22324A"><p style="margin: 0">Rock paper scissors settles arguments, but nothing makes you play a second match. I wanted a reason to keep playing that still fits in one minute.</p></div>
+      </section>
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; padding: 40px 0; border-top: 1px solid #D5DEEC">
+        <div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0A58E8">02</div><h2 style="margin: 6px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.025em">Who it was for</h2></div>
+        <div style="grid-column: span 2; min-width: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.6; color: #22324A"><p style="margin: 0">College students filling a few minutes between classes on their phones. I compared this audience with a once-a-day “Wordle-style” player and chose the quick, 2048-style loop because I could test it with classmates.</p></div>
+      </section>
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; padding: 40px 0; border-top: 1px solid #D5DEEC">
+        <div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0A58E8">03</div><h2 style="margin: 6px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.025em">What I built</h2></div>
+        <div style="grid-column: span 2; min-width: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.6; color: #22324A"><ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px"><li>Sign up, sign in and sign out with Flask-Login; passwords hashed by the framework.</li><li>Best-of-5 matches where the server decides every round; the browser only sends a pick.</li><li>Ranks that get harder: random → win-stay/lose-shift → predicts from your past picks (Strategy pattern).</li><li>Saved results, a private dashboard and account maintenance.</li><li>Cut on purpose: coins, gear and a shop moved to the backlog to keep the core solid.</li></ul></div>
+      </section>
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; padding: 40px 0; border-top: 1px solid #D5DEEC">
+        <div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0A58E8">04</div><h2 style="margin: 6px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.025em">How I checked it</h2></div>
+        <div style="grid-column: span 2; min-width: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.6; color: #22324A"><div style="overflow-x: auto; border: 1px solid #D5DEEC"><table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 16px"><thead><tr style="background: #0B1F3A; color: #FFFFFF; text-align: left"><th style="padding: 12px 16px">Check</th><th style="padding: 12px 16px">Result</th></tr></thead><tbody><tr style="border-top: 1px solid #D5DEEC"><td style="padding: 12px 16px">Game rules, opponent and match logic (first build)</td><td style="padding: 12px 16px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 8px; background: #E7F6EC; color: #0E5E2D">67 PASSED · NOV 16</span></td></tr><tr style="border-top: 1px solid #D5DEEC"><td style="padding: 12px 16px">Two-user privacy and password-change tests (Flask rebuild)</td><td style="padding: 12px 16px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 8px; background: #FFF1E0; color: #8A4B00">PLANNED</span></td></tr><tr style="border-top: 1px solid #D5DEEC"><td style="padding: 12px 16px">A/B playtest: does “1 star to the next rank” make people play again?</td><td style="padding: 12px 16px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 8px; background: #FFF1E0; color: #8A4B00">NOT RUN</span></td></tr><tr style="border-top: 1px solid #D5DEEC"><td style="padding: 12px 16px">Keyboard-only play and 375 px phone layout</td><td style="padding: 12px 16px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 8px; background: #FFF1E0; color: #8A4B00">PLANNED</span></td></tr></tbody></table></div><p style="margin: 0; font-size: 15px; color: #4A5A70">Results come from the public project record. Anything not run says so.</p></div>
+      </section>
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; padding: 40px 0; border-top: 1px solid #D5DEEC">
+        <div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #0A58E8">05</div><h2 style="margin: 6px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.025em">What’s next</h2></div>
+        <div style="grid-column: span 2; min-width: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.6; color: #22324A"><p style="margin: 0">Finish the Flask rebuild, run the playtest with classmates, and add GitHub Actions so every check runs on each push.</p><div style="background: #EEF4FF; border: 1px solid #D5DEEC; padding: 18px 20px; font-size: 16px"><strong>How AI helped:</strong> I used AI to lay out options, draft documents and write code. I made each decision, and every result above comes from a check that actually ran.</div></div>
+      </section>
+  </main>
+  <footer id="contact" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 48px; display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.03em">Questions about this project?</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <a href="mailto:rodas5@outlook.com" style="padding: 16px 24px; background: #0A58E8; color: #FFFFFF; text-decoration: none; font-weight: 600">rodas5@outlook.com</a>
+      <a href="https://www.linkedin.com/in/jefferson-rodas" style="padding: 14px 22px; border: 2px solid #0B1F3A; color: #0B1F3A; text-decoration: none; font-weight: 600">LinkedIn</a>
+      <a href="https://github.com/Jefferson2036-droid" style="padding: 14px 22px; border: 2px solid #0B1F3A; color: #0B1F3A; text-decoration: none; font-weight: 600">GitHub</a>
+      <a href="#" style="padding: 14px 22px; border: 2px solid #0B1F3A; color: #0B1F3A; text-decoration: none; font-weight: 600">Résumé (PDF)</a>
+    </div>
+    <p style="margin: 24px 0 0; padding-top: 20px; border-top: 1px solid #D5DEEC; font-size: 14px; color: #4A5A70">© 2026 Jefferson Rodas · Plainfield, NJ · English and Spanish · Site code on GitHub</p>
+  </footer>
+</div>
+</body>
+</html>
