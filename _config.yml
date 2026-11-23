@@ -1,0 +1,6 @@
+title: Jefferson Rodas · career research
+description: Career research and portfolio decisions for IS218
+theme: jekyll-theme-cayman
+exclude:
+  - AGENTS.md
+  - README.md
