@@ -3,6 +3,7 @@
 ## 2026-11-23 — Postings re-checked, direction kept general, reader retargeted
 **Changed:** Re-checked the three postings. NYU Langone's AI Engineer had closed; replaced it with JPMorganChase's 2027 Data & AI summer internship (banking). Found from my résumé that I graduate December 2027, so Palantir's new-grad FDE role (Dec 2026 / spring 2027) is a future target. Checked Bank of America roles as replacements (one 15+ years, one closed, one behind a sign-on page). Rewrote the career comparison: the portfolio stays general (forward-deployed / applied data and AI work) with two areas, data and AI in a business setting and customer-facing builds; the postings are research, not applications. Compared two readers and chose an early-career reviewer for applied data/AI roles in any industry; retargeted the user stories and the home-page strip. Options laid out with Claude; I made the choices.
 **Checked:** Palantir and OpenAI pages loaded on 2026-11-23 (title only). NYU Langone page returned "Page not found". JPMorganChase application page and deadline — NOT CHECKED (one job board shows 11/6/26). LinkedIn — NOT CHECKED.
+Then chose the brand: voice words dependable, precise, accountable; Caregiver/Helper character; persuasion choices "proof you can inspect" and "real-world responsibility" (TD Bank), each with its limit; added a visual reference per layout direction.
 **Next:** Confirm the JPMorganChase page; publish the career research site; partner review; build the portfolio site.
 
 ## 2026-11-13 — Repository scaffold
