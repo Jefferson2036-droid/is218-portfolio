@@ -5,6 +5,7 @@ title: Jefferson Rodas · career research
 # Career research: what applied data and AI work asks for
 
 Research site for my IS218 portfolio. It shows the postings I studied, what I learned from them, and the decisions they led to for my portfolio website, GitHub and LinkedIn. **The postings are research, not applications.**
+**Portfolio draft:** [jefferson2036-droid.github.io/is218-portfolio/site/](https://jefferson2036-droid.github.io/is218-portfolio/site/) ·
 **Repository:** [github.com/Jefferson2036-droid/is218-portfolio](https://github.com/Jefferson2036-droid/is218-portfolio) ·
 **My programming research site:** [jefferson2036-droid.github.io/is218-individual-game](https://jefferson2036-droid.github.io/is218-individual-game/) ·
 **Project record:** [docs/project-record.md](docs/project-record.md)

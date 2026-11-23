@@ -1,7 +1,13 @@
 .DS_Store
 node_modules/
+site/node_modules/
+site/.next/
+site/out/
 .venv/
 __pycache__/
 .pytest_cache/
 .env
 dist/
+_site/
+.jekyll-cache/
+.jekyll-metadata

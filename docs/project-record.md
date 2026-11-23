@@ -1,5 +1,15 @@
 # Project record
 
+## 2026-11-23 — Review 2: First Working Slice (portfolio draft)
+**Changed:** Built the first working portfolio slice in `site/` on branch `review-2-draft` using Next.js static export (`basePath: '/is218-portfolio/site'`). Implemented both layout options from shared data files (`site/src/content/`): Home Option B "Two areas" at `/` and Home Option A "Featured story" at `/option-a/`, connected with a top reviewer layout switcher. Built the Arena Climb case study at `/work/arena-climb/` with Field Notes headings (01 Problem through 05 What's next) and check statuses matching the individual game project record; built the Customer Studio (team) placeholder at `/work/customer-studio/` labeled "In progress" with `[ADD]` markers; built About at `/about/` preserving the personal story placeholder. Implemented Framer Motion animations (headline rises, sliding Right Now panel, divider draw, card hover/focus lift, reduced-motion fallbacks). Updated `.github/workflows/jekyll-gh-pages.yml` to build both Jekyll (`/is218-portfolio/`) and Next.js (`/is218-portfolio/site/`) into a unified deployment. Linked research site `index.md` to the portfolio draft and portfolio footer back to the research site. AI-assisted build with Antigravity; decisions followed Jefferson's requirements in `AGENTS.md` and `docs/tasks/review-2-draft.md`.
+**Checked:**
+- `npm run build` static export succeeded with zero errors across all 5 routes.
+- Link audit verified all 15 unique internal and external links; internal routes resolve cleanly under `basePath`. Expected `[ADD]` placeholders documented for résumé PDF, Customer Studio milestones, and live demos.
+- Mobile responsiveness at 375 px checked: containers flex, tables scroll internally (`overflow-x-auto`), sprites resize cleanly without sideways overflow.
+- Keyboard-only navigation verified: interactive cards, switcher tabs, buttons, and navigation links have `:focus-visible` rings with high-contrast outlines.
+- Reader check ("Can a reader find my work, résumé and profile links?"): NOT RUN (pending peer/reviewer session).
+**Next:** Merge pull request into `main`, deploy via GitHub Actions, and conduct reader review.
+
 ## 2026-11-23 — Front-end plan, mockups and animation rules
 **Changed:** Chose Next.js (static export) on GitHub Pages, a Swiss corporate look (navy, bold blue, bold sans headings), multi-page structure, and two homepage options to compare (A "Featured story", B "Two areas"; B preferred). Mocked up Home A and B, the Arena Climb case study, About, and Home B at phone width (link in docs/frontend.md). Wrote AGENTS.md for the coding agent, including animation rules. Reviewed the mockups myself: they still look AI-generated; kept them for now and listed fixes (headshot, my own copy, font, grid contrast, monogram). Options and mockups made with Claude; I made the choices.
 **Checked:** Mockups reviewed by me only. Classmate review — NOT RUN. Option A vs B — not chosen yet. Links marked [ADD] still missing.
