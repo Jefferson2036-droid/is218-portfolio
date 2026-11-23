@@ -5,13 +5,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { profile } from "@/content/profile";
 import { arenaClimbCaseStudy } from "@/content/case-studies";
-import { motion, useReducedMotion } from "framer-motion";
+import { BASE_PATH } from "@/content/config";
+import { useReducedMotion } from "framer-motion";
 
 export const FeaturedStoryHeroA: React.FC = () => {
   const prefersReducedMotion = useReducedMotion();
-  const easeOutBezier = [0.22, 1, 0.36, 1];
 
-  const codeLink = arenaClimbCaseStudy.links.find((l) => l.label === "Code")?.href || "https://github.com/Jefferson2036-droid/is218-individual-game";
+  const codeLink =
+    arenaClimbCaseStudy.links.find((l) => l.label === "Code")?.href ||
+    "https://github.com/Jefferson2036-droid/is218-individual-game";
+  const prLink =
+    arenaClimbCaseStudy.links.find((l) => l.label.toLowerCase().includes("pull request"))?.href ||
+    "https://github.com/Jefferson2036-droid/is218-individual-game/pull/2";
 
   return (
     <div className="flex flex-col">
@@ -47,7 +52,7 @@ export const FeaturedStoryHeroA: React.FC = () => {
 
             <div className="flex items-end justify-center sm:justify-start gap-3 sm:gap-5 bg-[#0848C0] px-4 sm:px-6 pt-4 sm:pt-5 pb-0 rounded-t overflow-hidden">
               <Image
-                src="/img/knight-px.png"
+                src={`${BASE_PATH}/img/knight-px.png`}
                 alt="Knight sprite"
                 width={120}
                 height={120}
@@ -55,7 +60,7 @@ export const FeaturedStoryHeroA: React.FC = () => {
                 unoptimized
               />
               <Image
-                src="/img/archer-px.png"
+                src={`${BASE_PATH}/img/archer-px.png`}
                 alt="Archer sprite"
                 width={120}
                 height={120}
@@ -63,7 +68,7 @@ export const FeaturedStoryHeroA: React.FC = () => {
                 unoptimized
               />
               <Image
-                src="/img/wizard-px.png"
+                src={`${BASE_PATH}/img/wizard-px.png`}
                 alt="Wizard sprite"
                 width={120}
                 height={120}
@@ -89,7 +94,7 @@ export const FeaturedStoryHeroA: React.FC = () => {
                 WHAT I BUILT
               </div>
               <div className="text-[17px] mt-1.5 text-[#22324A] leading-relaxed">
-                A rank climb on Flask with sign-in, server-decided rounds and saved results.
+                Flask first working slice: sign up, server-decided best-of-5 match, saved results you can reopen, and sign out.
               </div>
             </div>
 
@@ -98,7 +103,7 @@ export const FeaturedStoryHeroA: React.FC = () => {
                 HOW I CHECKED IT
               </div>
               <div className="text-[17px] mt-1.5 text-[#22324A] leading-relaxed">
-                Unit, integration and browser tests; an A/B playtest with classmates (planned).
+                51 automated unit/integration tests passing; green GitHub Actions CI run on PR #2. Dashboard and account maintenance next.
               </div>
             </div>
 
@@ -109,6 +114,14 @@ export const FeaturedStoryHeroA: React.FC = () => {
               >
                 Read the case study
               </Link>
+              <a
+                href={prLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-3.5 border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold text-[16px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+              >
+                Pull Request #2
+              </a>
               <a
                 href={codeLink}
                 target="_blank"

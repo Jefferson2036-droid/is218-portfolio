@@ -75,7 +75,7 @@ export const profile: ProfileData = {
     },
     {
       title: "Building Arena Climb",
-      description: "Flask web app with accounts, saved results and tests",
+      description: "Flask first slice built with 51 tests passing and green CI",
     },
     {
       title: "Customer Studio (team)",

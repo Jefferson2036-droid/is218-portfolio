@@ -1,4 +1,5 @@
 import { TagVariant } from "./projects";
+import { BASE_PATH } from "./config";
 
 export interface CheckRow {
   check: string;
@@ -42,10 +43,14 @@ export const arenaClimbCaseStudy: CaseStudy = {
   summary:
     "A Knight / Archer / Wizard game where you climb ranks against a computer that reads your habits.",
   role: "Solo: research, decisions, build (AI-assisted)",
-  stack: "Flask, Flask-Login, PostgreSQL, pytest, Playwright",
-  status: "Plan done · rebuild in progress",
+  stack: "Flask, Flask-Login, PostgreSQL, pytest, Playwright, GitHub Actions",
+  status: "First slice built · 51 tests passing (CI green)",
   links: [
     { label: "Code", href: "https://github.com/Jefferson2036-droid/is218-individual-game" },
+    {
+      label: "Pull request #2",
+      href: "https://github.com/Jefferson2036-droid/is218-individual-game/pull/2",
+    },
     {
       label: "Project record",
       href: "https://github.com/Jefferson2036-droid/is218-individual-game/blob/main/docs/project-record.md",
@@ -54,9 +59,9 @@ export const arenaClimbCaseStudy: CaseStudy = {
   ],
   sprites: {
     images: [
-      { src: "/img/knight-px.png", alt: "Knight sprite" },
-      { src: "/img/archer-px.png", alt: "Archer sprite" },
-      { src: "/img/wizard-px.png", alt: "Wizard sprite" },
+      { src: `${BASE_PATH}/img/knight-px.png`, alt: "Knight sprite" },
+      { src: `${BASE_PATH}/img/archer-px.png`, alt: "Archer sprite" },
+      { src: `${BASE_PATH}/img/wizard-px.png`, alt: "Wizard sprite" },
     ],
     caption: "Fighters rendered in Blender from free CC0 models (Quaternius), then pixelated.",
   },
@@ -79,14 +84,14 @@ export const arenaClimbCaseStudy: CaseStudy = {
       number: "03",
       heading: "What I built",
       content: [
-        "Core mechanics and data layer built; full Flask interface rebuild currently in progress:",
+        "The Flask first working slice is built, verified with 51 passing automated tests and a green GitHub Actions run:",
       ],
       bullets: [
-        "Sign up, sign in and sign out with Flask-Login; passwords hashed by the framework. (Rebuild in progress)",
-        "Best-of-5 matches where the server decides every round; the browser only sends a pick. (Built & tested)",
-        "Ranks that get harder: random → win-stay/lose-shift → predicts from your past picks (Strategy pattern). (Built & tested)",
-        "Saved results, a private dashboard and account maintenance. (Rebuild in progress)",
-        "Cut on purpose: coins, gear and a shop moved to the backlog to keep the core solid.",
+        "Sign up, sign in and sign out with Flask-Login; passwords hashed by the framework.",
+        "Server-decided best-of-5 matches where the server decides every round and validates picks; the browser only sends a pick.",
+        "Ranks that get harder: random → win-stay/lose-shift → predicts from your past picks (Strategy pattern).",
+        "Saved results that you can reopen to review previous matches.",
+        "Kept as next: private dashboard and account maintenance.",
       ],
     },
     {
@@ -103,12 +108,17 @@ export const arenaClimbCaseStudy: CaseStudy = {
   checks: {
     rows: [
       {
-        check: "Game rules, opponent and match logic (first build)",
-        result: "67 PASSED · NOV 16",
+        check: "Flask first working slice tests (auth, matches, saved results)",
+        result: "51 PASSED · CI GREEN",
         variant: "done",
       },
       {
-        check: "Two-user privacy and password-change tests (Flask rebuild)",
+        check: "GitHub Actions automated CI workflow run",
+        result: "GREEN (PR #2)",
+        variant: "done",
+      },
+      {
+        check: "Private dashboard and account maintenance",
         result: "PLANNED",
         variant: "progress",
       },
@@ -127,7 +137,7 @@ export const arenaClimbCaseStudy: CaseStudy = {
   },
   whatsNext: {
     content:
-      "Finish the Flask rebuild, run the playtest with classmates, and add GitHub Actions so every check runs on each push.",
+      "Build the private dashboard and account maintenance, run the playtest with classmates, and keep all checks passing on every push.",
     aiNote:
       "How AI helped: I used AI to lay out options, draft documents and write code. I made each decision, and every result above comes from a check that actually ran.",
   },

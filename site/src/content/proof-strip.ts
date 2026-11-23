@@ -25,8 +25,8 @@ export const proofStrip: ProofStripData = {
   rows: [
     {
       skill: "Python",
-      proof: "Arena Climb game rules, opponent strategies and tests (GitHub)",
-      proofLink: "https://github.com/Jefferson2036-droid/is218-individual-game",
+      proof: "Arena Climb game rules, opponent strategies, Flask match slice and tests (51 passed, PR #2)",
+      proofLink: "https://github.com/Jefferson2036-droid/is218-individual-game/pull/2",
       status: "SHOWN",
       variant: "done",
     },

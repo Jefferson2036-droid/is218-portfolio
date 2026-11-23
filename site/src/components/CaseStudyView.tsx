@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CaseStudy } from "@/content/case-studies";
+import { BASE_PATH } from "@/content/config";
 import { StatusTag } from "./StatusTag";
 import { motion, useReducedMotion } from "framer-motion";
 
@@ -78,17 +79,23 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({ caseStudy }) => {
       {caseStudy.sprites && (
         <div className="my-8">
           <div className="bg-accent p-6 sm:p-8 flex justify-center items-end gap-3 sm:gap-10 overflow-hidden">
-            {caseStudy.sprites.images.map((img) => (
-              <Image
-                key={img.src}
-                src={img.src}
-                alt={img.alt}
-                width={160}
-                height={160}
-                className="h-[80px] sm:h-[140px] md:h-[160px] w-auto pixelated object-contain"
-                unoptimized
-              />
-            ))}
+            {caseStudy.sprites.images.map((img) => {
+              const src =
+                img.src.startsWith("http") || img.src.startsWith(BASE_PATH)
+                  ? img.src
+                  : `${BASE_PATH}${img.src.startsWith("/") ? "" : "/"}${img.src}`;
+              return (
+                <Image
+                  key={img.src}
+                  src={src}
+                  alt={img.alt}
+                  width={160}
+                  height={160}
+                  className="h-[80px] sm:h-[140px] md:h-[160px] w-auto pixelated object-contain"
+                  unoptimized
+                />
+              );
+            })}
           </div>
           <p className="mt-2 text-[14px] text-[#4A5A70]">{caseStudy.sprites.caption}</p>
         </div>
